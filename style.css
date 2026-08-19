@@ -5,6 +5,10 @@ body{
   background-color: #f79256;
 }
 
+.container {
+    display: flex;
+    gap: 20px;
+}
 
 #thisIsAnId{
   font-family: "Honk", system-ui;
