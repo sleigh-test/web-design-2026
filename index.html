@@ -15,5 +15,15 @@
         <div class="box">Sed ut perspiciatis unde omnis iste natus error sit</div>
     </div>
     <button class="bg-sky-500 hover:bg-sky-700 ...">Save changes</button>
+    <button id="myButton">Click Me</button>
+    <p id="message">Hello!</p>
+
+<script>
+  document.getElementById("myButton").addEventListener("click", function() {
+    document.getElementById("message").textContent = "You clicked the button!";
+});
+console.log("javascript is running");
+</script>
+    
   </body>
 </html>
