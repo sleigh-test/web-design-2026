@@ -1,240 +1,721 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Purple Tint Phenomenon: A New Horizon in Giraffe Zoology</title>
-    <style>
-        :root {
-            --primary: #4a2e80;
-            --primary-light: #f5f2fa;
-            --accent: #d2b4de;
-            --text-dark: #2c3e50;
-            --text-light: #7f8c8d;
-            --bg: #ffffff;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Explore the Purple Giraffe research concept and its unusual lavender-tinted coat.">
+<title>The Purple Giraffe | Research Institute</title>
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+:root {
+  --navy: #36415A;
+  --green: #B7D894;
+  --pale: #E0F8C7;
+  --cream: #F8F7F1;
+  --ink: #263B5B;
+  --purple: #87609C;
+}
 
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.8;
-            color: var(--text-dark);
-            background-color: var(--bg);
-        }
+* { box-sizing: border-box; }
 
-        header {
-            background: linear-gradient(135deg, #2c1a4d, #5b3996);
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
+html { scroll-behavior: smooth; }
 
-        .header-container h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            font-weight: normal;
-            letter-spacing: 1px;
-        }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font: 16px/1.65 Arial, sans-serif;
+}
 
-        .header-container p {
-            font-size: 1.2rem;
-            font-style: italic;
-            color: var(--accent);
-            max-width: 800px;
-            margin: 0 auto;
-        }
+a { color: inherit; }
 
-        .container {
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
+.wrap {
+  width: min(1180px, calc(100% - 40px));
+  margin: auto;
+}
 
-        section {
-            margin-bottom: 60px;
-        }
+/* HEADER AND LOGO */
 
-        h2 {
-            font-size: 2rem;
-            color: var(--primary);
-            border-bottom: 2px solid var(--primary-light);
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-            font-weight: normal;
-        }
+header, footer {
+  background: var(--navy);
+  color: white;
+}
 
-        p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-            text-align: justify;
-        }
+.nav {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
 
-        /* Scientific Pull Quotes */
-        .pull-quote {
-            background-color: var(--primary-light);
-            border-left: 5px solid var(--primary);
-            padding: 30px;
-            margin: 40px 0;
-            font-style: italic;
-            font-size: 1.25rem;
-            color: #3b2366;
-            position: relative;
-        }
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+}
 
-        .pull-quote cite {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-            font-style: normal;
-            font-size: 1rem;
-            color: var(--text-light);
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
+.mark {
+  font-size: 38px;
+  color: var(--green);
+}
 
-        /* Pure CSS CSS-Art Graphics representing the slightly purple hues */
-        .image-gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin: 40px 0;
-        }
+.brand strong {
+  display: block;
+  font: 23px Georgia, serif;
+  letter-spacing: .1em;
+}
 
-        .image-container {
-            background-color: var(--primary-light);
-            border: 1px solid #e8e3f0;
-            padding: 20px;
-            text-align: center;
-            border-radius: 4px;
-        }
+.brand small {
+  display: block;
+  text-align: center;
+  letter-spacing: .25em;
+  font-size: 10px;
+}
 
-        /* SVG illustrations serving as highly professional data graphics */
-        .giraffe-svg {
-            width: 100%;
-            height: 250px;
-            background: #faf8fd;
-            border-radius: 4px;
-            margin-bottom: 15px;
-        }
+.links {
+  display: flex;
+  gap: 28px;
+}
 
-        .image-caption {
-            font-size: 0.95rem;
-            color: var(--text-light);
-            font-style: italic;
-        }
+.links a, footer a {
+  font-size: 13px;
+  text-decoration: none;
+}
 
-        .highlight-box {
-            border: 1px solid var(--accent);
-            background-color: #fdfbfe;
-            padding: 30px;
-            border-radius: 4px;
-            margin: 40px 0;
-        }
+.links a:hover, footer a:hover {
+  color: var(--green);
+}
 
-        footer {
-            background-color: #2c1a4d;
-            color: #a291b8;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 0.9rem;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-        }
+.menu { display: none; }
 
-        @media (max-width: 768px) {
-            .image-gallery {
-                grid-template-columns: 1fr;
-            }
-            .header-container h1 {
-                font-size: 2.2rem;
-            }
-        }
-    </style>
+/* HERO */
+
+.hero {
+  min-height: 430px;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  color: white;
+  background: var(--navy);
+  overflow: hidden;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    url("https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=2000&q=85")
+    center 38% / cover;
+  filter: saturate(.85);
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(54,65,90,.94),
+      rgba(71,62,95,.72) 44%,
+      rgba(130,85,150,.18)
+    ),
+    rgba(140,90,165,.18);
+  mix-blend-mode: multiply;
+}
+
+.hero-copy {
+  max-width: 590px;
+  padding: 72px 0;
+}
+
+.eyebrow, .label {
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1, h2, h3, blockquote {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  font-size: clamp(44px, 6vw, 72px);
+  line-height: 1.02;
+  margin: 8px 0;
+}
+
+h2 {
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.12;
+  margin: 0 0 16px;
+  color: var(--navy);
+}
+
+.lede {
+  font: 25px Georgia, serif;
+  color: var(--pale);
+  margin: 10px 0;
+}
+
+.button {
+  display: inline-block;
+  background: var(--green);
+  color: var(--navy);
+  border-radius: 99px;
+  padding: 11px 22px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.button:hover { background: var(--pale); }
+
+/* GENERAL SECTIONS */
+
+section { scroll-margin-top: 20px; }
+
+.section { padding: 62px 0; }
+
+.label {
+  color: var(--navy);
+  margin: 0 0 8px;
+}
+
+.label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #78a65d;
+  margin: 0 9px 3px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.grid p { font-size: 14px; }
+
+.question {
+  background: #eef3e7;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.question small {
+  letter-spacing: .16em;
+  font-weight: bold;
+}
+
+.question blockquote {
+  font-size: 20px;
+  font-style: italic;
+  margin: 6px 0 0;
+}
+
+/* RESEARCH AREAS AND PHOTOGRAPHY */
+
+.photos {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.photo {
+  overflow: hidden;
+  border-radius: 5px;
+  min-height: 240px;
+  background: #e8e2eb;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Purple tint on ordinary giraffe photography */
+.tint img {
+  filter: saturate(.82) sepia(.12) hue-rotate(235deg);
+}
+
+.factors {
+  border-left: 1px solid #d5ddcb;
+  padding-left: 18px;
+}
+
+.factor { padding: 12px 0; }
+
+.factor b {
+  color: #729b58;
+  margin-right: 8px;
+}
+
+/* MATERNAL IRON SECTION */
+
+.soft {
+  background: linear-gradient(110deg, #edf4e6, #e0f0d5);
+}
+
+.three {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr .72fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.quote {
+  border-left: 1px solid #b8c7b0;
+  padding: 10px 0 10px 24px;
+  margin: 0;
+  font: italic 16px/1.65 Georgia, serif;
+}
+
+.quote cite {
+  display: block;
+  font: 12px Arial, sans-serif;
+  margin-top: 14px;
+}
+
+.quote small {
+  display: block;
+  letter-spacing: .12em;
+  margin-top: 4px;
+}
+
+/* COMPARISON */
+
+.compare {
+  display: grid;
+  grid-template-columns: .9fr 1.3fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.twophotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.twophotos figure { margin: 0; }
+
+.twophotos .photo {
+  aspect-ratio: 1.35;
+  min-height: 150px;
+}
+
+.twophotos .photo img { min-height: 150px; }
+
+.twophotos figcaption {
+  font: bold 17px Georgia, serif;
+  padding-top: 10px;
+}
+
+.legend {
+  font: 11px Arial, sans-serif;
+  margin-top: 5px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #85402c;
+  margin-right: 6px;
+}
+
+.dot.purple { background: #79477d; }
+
+.note {
+  background: #f0f0e9;
+  border-left: 3px solid var(--green);
+  padding: 14px 18px;
+  font-size: 12px;
+  color: #52627a;
+  margin-top: 28px;
+}
+
+/* FOOTER */
+
+footer { padding: 34px 0; }
+
+.foot {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 25px;
+  align-items: center;
+}
+
+.footnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.tagline {
+  font: italic 14px Georgia, serif;
+  border-left: 1px solid #9ca5b3;
+  padding-left: 20px;
+}
+
+.copyright {
+  text-align: center;
+  color: #c9cfd7;
+  font-size: 10px;
+  margin: 22px 0 0;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .menu {
+    display: block;
+    background: transparent;
+    color: white;
+    border: 1px solid #aaa;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 82px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 5;
+  }
+
+  .links.open { display: flex; }
+
+  .grid, .compare { grid-template-columns: 1fr; }
+
+  .three { grid-template-columns: 1fr 1fr; }
+
+  .three .photo {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .foot {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .tagline {
+    border: 0;
+    padding: 0;
+  }
+
+  .brand { justify-content: center; }
+}
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+  .hero {
+    min-height: 480px;
+    align-items: flex-end;
+  }
+
+  .hero:before { background-position: 62% center; }
+
+  .hero:after {
+    background: linear-gradient(
+      0deg,
+      rgba(54,65,90,.96),
+      rgba(54,65,90,.55) 70%,
+      rgba(90,65,110,.12)
+    );
+  }
+
+  .hero-copy { padding: 130px 0 36px; }
+
+  .section { padding: 44px 0; }
+
+  .photos, .three { grid-template-columns: 1fr; }
+
+  .three .photo {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .twophotos { gap: 12px; }
+
+  .twophotos figcaption { font-size: 14px; }
+
+  .brand strong { font-size: 16px; }
+
+  .brand small { font-size: 8px; }
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="header-container">
-            <h1>The Rare Purple Giraffe</h1>
-            <p>An Analysis of Gestational Dietary Factors and Pelage Variation in Modern Megafauna</p>
+<header id="home">
+  <div class="wrap nav">
+    <a class="brand" href="#">
+      <span class="mark">♧</span>
+      <span>
+        <strong>PURPLE GIRAFFE</strong>
+        <small>RESEARCH INSTITUTE</small>
+      </span>
+    </a>
+
+    <button class="menu" aria-expanded="false" aria-controls="links">
+      Menu ☰
+    </button>
+
+    <nav class="links" id="links">
+      <a href="#">Home</a>
+      <a href="#">Our Research</a>
+      <a href="#">The Purple Giraffe</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Rare / Research / Impact</p>
+        <h1>The Purple Giraffe</h1>
+        <p class="lede">A rare coat color. A deeper story.</p>
+        <p>
+          At the Purple Giraffe Research Institute, we explore the science
+          behind one of nature’s most intriguing phenomena — the purple-tinted giraffe.
+        </p>
+        <a class="button" href="#">Explore Our Research →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOVERY -->
+  <section class="section" id="discovery">
+    <div class="wrap grid">
+      <div>
+        <p class="label">The Discovery</p>
+        <h2>What Makes the Purple Giraffe Unique?</h2>
+        <p>
+          In the study of large mammalian phenotypes, few occurrences capture
+          scientific and public attention quite like coat color mutations.
+          While mutations leading to melanism, leucism, or unpatterned coats
+          are documented across various subspecies, the emergence of the
+          “Purple-Tinted” Giraffe introduces a fascinating intersection
+          between genetics, environmental resource availability, and maternal biology.
+        </p>
+        <p>
+          Unlike standard reticulated coats that consist of sharp,
+          chestnut-brown patches, these rare specimens are described as
+          exhibiting a subtle lavender-to-violet undertone within their darker
+          patches. This concept does not describe a distinct genetic species;
+          the proposed metabolic explanation requires scientific verification.
+        </p>
+      </div>
+
+      <div>
+        <div class="question">
+          <small>THE BIG QUESTION</small>
+          <blockquote>
+            What causes the purple tint, and why is it so rare?
+          </blockquote>
         </div>
-    </header>
 
-    <div class="container">
-        
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <p>
-                In the study of large mammalian phenotypes, few occurrences capture scientific and public attention quite like coat color mutations. While mutations leading to melanism, leucism, or unpatterned coats are documented across various subspecies, the emergence of the <strong>"Purple-Tinted" Giraffe</strong> introduces a fascinating intersection between genetics, environmental resource availability, and maternal biology.
-            </p>
-            <p>
-                Unlike standard reticulated coats that consist of sharp, chestnut-brown patches, these rare specimens exhibit a subtle, distinct lavender-to-violet undertone within their darker patches. This phenomenon is not classified as a distinct genetic species, but rather a rare metabolic variation occurring during fetal development.
-            </p>
-        </section>
+        <div class="photos">
+          <div class="photo tint">
+            <img
+              src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1000&q=85"
+              alt="Giraffe in a natural savanna landscape">
+          </div>
 
-        <section id="scientific-cause">
-            <h2>The Gestational Catalyst: Maternal Iron Levels</h2>
-            <p>
-                Recent breakthroughs in maternal-fetal veterinary medicine have isolated the specific trigger for this coat variance. Studies indicate that hyper-accumulation of serum iron levels in the mother's blood during the second trimester of pregnancy alters the cellular chemistry of developing fetal hair follicles. 
-            </p>
-            <p>
-                When a pregnant giraffe consumes acacia leaves or mineral-dense soil exceptionally high in bioavailable iron, the maternal bloodstream transfers these excess trace elements across the placental barrier. This specific chemical saturation directly interacts with early melanin production, shifting the baseline oxidation of eumelanin pigments and causing the emerging hairs to catch light with a pronounced violet refraction.
-            </p>
+          <div class="factors">
+            <div class="factor"><b>⌘</b> Genetics</div>
+            <div class="factor"><b>❧</b> Environmental Resources</div>
+            <div class="factor"><b>♡</b> Maternal Biology</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <div class="pull-quote">
-                "The biochemical pathway is highly sensitive. We observed that when maternal serum iron spikes past standard baseline limits during peak gestation, the cellular matrix of the pelage binds trace heavy metals. This shifts the structural refraction of the hair, producing a highly rare, soft purple tint rather than the traditional deep amber."
-                <cite>— Dr. Helena Vance, Lead Specialist in Megafauna Pigmentation</cite>
-            </div>
-        </section>
+  <!-- MATERNAL IRON -->
+  <section class="section soft" id="catalyst">
+    <div class="wrap three">
+      <div>
+        <p class="label">The Gestational Catalyst</p>
+        <h2>Maternal Iron Levels</h2>
+        <p>
+          The proposed explanation explores whether maternal-fetal biology
+          and trace mineral availability could influence developing hair
+          follicles. In this hypothesis, unusually high maternal serum iron
+          during the second trimester is suggested as a possible factor
+          affecting the cellular chemistry of fetal pigmentation.
+        </p>
+        <p>
+          Further controlled research would be needed to determine whether
+          iron levels can cause this kind of coat-color change and to
+          establish a biological mechanism.
+        </p>
+        <a class="button" href="#">Explore the Coat Pattern →</a>
+      </div>
 
-        <section id="visual-evidence">
-            <h2>Observed Structural Alterations</h2>
-            <p>
-                The purple coloration is deeply elegant and most apparent under direct natural sunlight. Below are scientific reconstructions detailing the visual variance noted between standard coloration and observed purple-tinted anomalies.
-            </p>
+      <blockquote class="quote">
+        “The biochemical pathway is highly sensitive. The proposed mechanism
+        suggests that changes during peak gestation could influence how
+        developing hair reflects light, creating a rare, soft purple tint
+        rather than the traditional deep amber.”
+        <cite>
+          Dr. Helena Vance
+          <small>Illustrative attribution — verify before publication</small>
+        </cite>
+      </blockquote>
 
-            <div class="image-gallery">
-                <div class="image-container">
-                    <!-- Scientific SVG Drawing 1 -->
-                    <svg class="giraffe-svg" viewBox="0 0 200 200">
-                        <defs>
-                            <linearGradient id="purpleGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#6c5b7b;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#4a3b5c;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <!-- Sky Background -->
-                        <rect width="200" height="200" fill="#f4f0fa"/>
-                        <!-- Sun -->
-                        <circle cx="160" cy="40" r="15" fill="#fff" opacity="0.6"/>
-                        <!-- Giraffe silhouette rendering -->
-                        <path d="M40,200 L45,130 L55,60 L50,30 L60,25 L65,35 L60,60 L75,110 L110,135 L115,200" fill="url(#purpleGrad1)" />
-                        <!-- Distinct Pattern Blocks with purple tint -->
-                        <polygon points="52,70 62,72 65,85 55,82" fill="#8e7f9d"/>
-                        <polygon points="56,90 68,93 72,108 58,105" fill="#827193"/>
-                        <polygon points="62,112 75,116 80,130 66,125" fill="#756387"/>
-                        <polygon points="76,132 95,135 98,155 80,150" fill="#655278"/>
-                    </svg>
-                    <div class="image-caption">Figure 1.1: Specimen observing standard field lighting, showcasing muted violet patches along the lower cervical vertebrae.</div>
-                </div>
+      <div class="photo tint">
+        <img
+          src="https://images.unsplash.com/photo-1547721064-da6cfb341d50?auto=format&fit=crop&w=900&q=85"
+          alt="Giraffe portrait with a subtle lavender color treatment">
+      </div>
+    </div>
+  </section>
 
-                <div class="image-container">
-                    <!-- Scientific SVG Drawing 2 -->
-                    <svg class="giraffe-svg" viewBox="0 0 200 200">
-                        <defs>
-                            <linearGradient id="purpleGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#857595;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#5c4b6e;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                        <!-- Sky Background -->
-                        <rect width="200" height="200" fill="#eeeaf5"/>
-                        <!-- Giraffe silhouette rendering close-up -->
-                        <path d="M30,200 L50,110 L80,40 L75,15 L95,10 L105,25 L95,45 L70,115 L85,200" fill="url(#purpleGrad2)" />
-                        <!-- Intense pattern close-up -->
-                        <polygon points="68,55 80,58 84,72 72,70" fill="#ada0bc"/>
-                        <polygon points="64,80 78,82 82,98 68,94" fill="#a092b0"/>
-                        <polygon points="58,105 74,108 76,128 60,122" fill="#9181a3"/>
+  <!-- COAT COMPARISON -->
+  <section class="section" id="comparison">
+    <div class="wrap compare">
+      <div>
+        <p class="label">Observed Structural Alterations</p>
+        <h2>The Difference in Detail</h2>
+        <p>
+          The concept focuses on the visual contrast between standard giraffe
+          coloration and the proposed purple-tinted appearance. The effect is
+          imagined as most noticeable in natural sunlight, where darker coat
+          patches show a soft lavender-to-violet undertone.
+        </p>
+        <p>
+          Replace these sample images with close-up reference photos or
+          clearly labeled visual reconstructions.
+        </p>
+      </div>
+
+      <div class="twophotos">
+        <figure>
+          <div class="photo">
+            <img
+              src="https://images.unsplash.com/photo-1519659528534-7fd733a832a0?auto=format&fit=crop&w=900&q=85"
+              alt="Giraffe coat pattern reference">
+          </div>
+          <figcaption>
+            Standard Reticulated Giraffe
+            <div class="legend"><span class="dot"></span>Chestnut-brown patches</div>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <div class="photo tint">
+            <img
+              src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=85"
+              alt="Illustrative purple-tinted giraffe reference">
+          </div>
+          <figcaption>
+            Purple-Tinted Giraffe
+            <div class="legend"><span class="dot purple"></span>Lavender-to-violet undertone</div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <p class="note">
+        <b>Research note:</b> The proposed pigmentation mechanism and
+        Dr. Helena Vance attribution are included as a concept pending
+        scientific verification, not as established scientific findings.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="foot">
+      <a class="brand" href="#">
+        <span class="mark">♧</span>
+        <span>
+          <strong>PURPLE GIRAFFE</strong>
+          <small>RESEARCH INSTITUTE</small>
+        </span>
+      </a>
+
+      <nav class="footnav">
+        <a href="#">Home</a>
+        <a href="#">Our Research</a>
+        <a href="#">The Purple Giraffe</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <p class="tagline">
+        Better understanding today.<br>
+        Healthier populations tomorrow.
+      </p>
+    </div>
+
+    <p class="copyright">
+      © 2026 Purple Giraffe Research Institute.
+      Concept website for demonstration purposes.
+    </p>
+  </div>
+</footer>
+
+<script>
+const button = document.querySelector('.menu');
+const nav = document.querySelector('#links');
+
+button.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  button.setAttribute('aria-expanded', String(open));
+});
+
+nav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    nav.classList.remove('open');
+    button.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', event => event.preventDefault());
+});
+</script>
+
+</body>
+</html>
